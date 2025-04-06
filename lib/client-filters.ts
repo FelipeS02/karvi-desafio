@@ -26,5 +26,5 @@ export const defaultFilterStateOptions = {
   // Setting it to false will trigger a network request to the server with the updated querystring.
   shallow: false,
   // Prevent history to stack when too many filters are applied
-  history: 'replace' as HistoryOptions,
+  history: 'push' as HistoryOptions,
 };

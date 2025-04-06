@@ -11,11 +11,13 @@ export default async function CatalogLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
   const filters = await getFilters();
+
   return (
     <div className={styles.catalog__wrapper}>
       <Filters>
         <FiltersList filters={filters} />
       </Filters>
+
       {children}
     </div>
   );

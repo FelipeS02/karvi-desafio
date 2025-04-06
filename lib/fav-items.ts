@@ -13,6 +13,8 @@ function handleError(e: unknown) {
 
 export function getFavItems(): Item[] {
   try {
+    if (typeof window === 'undefined') return [];
+
     const storageFavs = localStorage.getItem('fav-items');
 
     const allFavs: Item[] = storageFavs ? JSON.parse(storageFavs) : [];

@@ -8,6 +8,7 @@ const ViewGrid = createLucideIcon('ViewGrid', [
       fillRule: 'evenodd',
       clipRule: 'evenodd',
       strokeWidth: '0.5',
+      key: "view-grid-icon-1"
     },
   ],
 ]);

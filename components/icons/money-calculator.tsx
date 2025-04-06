@@ -9,6 +9,7 @@ export const MoneyCalculator = createLucideIcon('Money calculator', [
       clipRule: 'evenodd',
       fill: 'inherit',
       strokeWidth: '0.5',
+     key: "money-calc-item-1"
     },
   ],
   [
@@ -21,6 +22,7 @@ export const MoneyCalculator = createLucideIcon('Money calculator', [
       strokeWidth: '0.25',
       id: 'dollar-sign',
       transformOrigin: '75% 70%',
+      key: "money-calc-item-2"
     },
   ],
 ]);

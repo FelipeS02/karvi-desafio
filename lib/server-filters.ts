@@ -77,6 +77,6 @@ export const searchParamsCache = createSearchParamsCache(
  * @returns Zod-validated params
  */
 export const getJSONSearchParams = async (
-  searchParams: Promise<SearchParams>
+  searchParams: SearchParams
 ): Promise<typeof searchParamsSchema._output> =>
   searchParamsSchema.parse(await searchParamsCache.parse(searchParams));

@@ -18,7 +18,7 @@ const FiltersList: FC<{ filters: Filters }> = ({ filters }) => {
     setFilters,
   } = useFiltersState();
 
-  const [, setPage] = usePaginationState();
+  const setPage = usePaginationState()[1];
 
   const handleSelect: MultipleFilterChangeHandler = (type, value) => {
     handleMultipleFilterChange(type, value);

@@ -28,7 +28,7 @@ export default async function RootLayout({
       <LenisProvider>
         <NuqsAdapter>
           <body
-            className={`${raleway.variable} font-raleway antialiased h-dvh`}
+            className={`${raleway.variable} font-raleway antialiased min-h-dvh`}
           >
             <Header />
             {children}

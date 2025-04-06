@@ -10,6 +10,8 @@ const getData = async () => {
   const data = await fetch(process.env.API_URL ?? '', {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' },
+    cache: 'no-cache',
+    
   });
 
   // Validate and parse the API response
@@ -91,7 +93,7 @@ export const getItems = async (
   // Paginate the filtered items
   const paginatedItems = paginateItems(parsedItems);
 
-  await timeout(1500)
+  await timeout(1500);
 
   // Return the current page along with metadata
   return {

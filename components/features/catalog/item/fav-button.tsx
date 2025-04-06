@@ -1,3 +1,5 @@
+"use client"
+
 import { ButtonHTMLAttributes, forwardRef } from 'react';
 
 import { Heart } from 'lucide-react';

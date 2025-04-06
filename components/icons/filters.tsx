@@ -9,9 +9,9 @@ const Filters = createLucideIcon('Filters', [
       clipRule: 'evenodd',
       strokLinecap: 'round',
       strokeLinejoin: 'round',
-      fill: "inherit",
-      stroke: "inherit",
-     
+      fill: 'inherit',
+      stroke: 'inherit',
+      key: 'filters-icon-1',
     },
   ],
 ]);
